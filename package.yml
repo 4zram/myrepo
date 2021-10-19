@@ -1,0 +1,10 @@
+--- # Installation of packages
+- host: chefserver
+  user: chef
+  become: yes
+  connection: ssh
+  vars:
+          pkgname: git
+  tasks:
+          - name: insall git package
+            action: yum name = '{{pkgname}}' state = install
