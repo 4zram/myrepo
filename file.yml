@@ -1,0 +1,10 @@
+--- #
+- hosts: chefserver
+  user: chef
+  become: true
+  tasks:
+          - name: Create a file
+            file:
+                    path: /home/chef/file1.txt
+                    state: touch
+

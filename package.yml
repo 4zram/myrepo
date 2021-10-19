@@ -1,5 +1,5 @@
 --- # Installation of packages
-- host: chefserver
+- hosts: chefserver
   user: chef
   become: yes
   connection: ssh
