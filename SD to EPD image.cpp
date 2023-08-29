@@ -17,8 +17,10 @@ The circuit:
  ** Vcc - +3V
   
 */
+// include GxEPD2 to support the EPD functionality; available through Library Manager.
 #include <GxEPD2_BW.h>
 #include <GxEPD2_3C.h>
+#include <Adafruit_GFX.h>
 #include <Fonts/FreeMonoBold9pt7b.h>
 
 // include SdFat for FAT32 support with long filenames; available through Library Manager
